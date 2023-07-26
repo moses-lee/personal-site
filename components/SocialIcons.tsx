@@ -6,8 +6,14 @@ export function SocialIcons() {
   return (
     <div className="flex flex-cols gap-12 items-center justify-center">
       {Object.keys(content.socials).map((social) => (
-        <Link key={social} href={content.socials[social].url}>
+        <Link
+          key={social}
+          href={content.socials[social].url}
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <Image
+            className="opacity-25"
             src={content.socials[social].icon}
             alt={social}
             width={28}

@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/animations/useRenderTarget.tsx", "components/animations/useSlerp.tsx", "components/animations/useLayers.tsx", "components/animations/Scene.tsxcomponents/animations/ThinFilmFresnelMap.tsxp.js", "components/animations/ThinFilmFresnelMap.js"],
   "exclude": ["node_modules"]
 }

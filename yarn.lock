@@ -276,9 +276,9 @@
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
 "@react-three/drei@^9.78.1":
-  version "9.78.1"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.78.1.tgz#93d31be4b7a5553689b724c95dc72cbe1ae0f9ae"
-  integrity sha512-Q7BYEt5G5pLxdNbI14Zv/nfxEAS8sYuQvIa+xDvspMQB1x6/+ULZavLoOQ5OtpJ4+n/yxoIk3XZ5l3j0gvB0cg==
+  version "9.78.2"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.78.2.tgz#5afe7c52153784fa20852d2ca908922532a93ad4"
+  integrity sha512-8lq4gVOJfqyKjONmocyI5rPwspt1DMD6XA+WMhLNL8v5+J9Gigb0WKfK9A5nISSGJErmdZ0yOhM3mpO8/6vOJw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@mediapipe/tasks-vision" "0.10.2-rc2"
@@ -873,9 +873,9 @@ dequal@^2.0.3:
   integrity sha512-0je+qPKHEMohvfRTCEo3CrPG6cAzAYgmzKyxRiYSSDkS6eGJdyVJm7WaYA5ECaAD9wLB2T4EEeymA5aFVcYXCA==
 
 detect-gpu@^5.0.28:
-  version "5.0.31"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.31.tgz#5749bea3aa56bc2ec41383b585f6cbd965619fee"
-  integrity sha512-+ZZr/deA5OvuBxod6kKFUvpZA9YR2r4fRYlAJGL7N5aUSLrY3Xgi+K4U5NHmeuk2mNC044n1YJwsq2Aw6hPmUw==
+  version "5.0.32"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.32.tgz#ca03b5d943f5c3db18f0ef6afb326092012d0c49"
+  integrity sha512-Z310uSFzHnWoInT7czpgPH8yuragsoylzFTatKHSZ11UDSm+pTRnR8U2bkhwGn9AECjl72oYoJWD+G3P8RW2NQ==
   dependencies:
     webgl-constants "^1.1.1"
 
@@ -1906,6 +1906,11 @@ maath@^0.6.0:
   resolved "https://registry.yarnpkg.com/maath/-/maath-0.6.0.tgz#7841d0fb95bbb37d19b08b7c5458ef70190950d2"
   integrity sha512-dSb2xQuP7vDnaYqfoKzlApeRcR2xtN8/f7WV/TMAkBC8552TwTLtOO0JTcSygkYMjNDPoo6V01jTw/aPi4JrMw==
 
+maath@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/maath/-/maath-0.7.0.tgz#a9a44fe2f7680959d7cc75466ac11329e96db66c"
+  integrity sha512-JQ1JZrQLDgJ59snCk2AcSb/jdGwNgGQXlLcfZChN8lmpMR7g3bpMM3ugcqGfU1ROwjVvX5CvcVJHc8TkxljG8Q==
+
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
@@ -2733,14 +2738,14 @@ thenify-all@^1.0.0:
     any-promise "^1.0.0"
 
 three-mesh-bvh@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.0.tgz#15523c335383df658dc60063a783fdd52d045dc5"
-  integrity sha512-4/oXeqVMLuN9/P0M3L5ezIVrFiXQXKvjVTErkiSYMjSaPoWfNPAwqulSgLf4bIUPn8/Lq3rmIJwxbCuD8qDobA==
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.6.1.tgz#63cebe46ff90221286f97e1fea59b433bb95304f"
+  integrity sha512-8fE6UwD5Ep8bAHd3Mp/Vw+7J3T10eGL95Lj98WQ9o3QEtAmlvmMhV+xxhrwYetfawzCPlgPYAB8Dl9+k1JveCQ==
 
 three-stdlib@^2.23.9:
-  version "2.23.12"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.23.12.tgz#f269398e3125c77bcd374d87f4c1da8d550e7f21"
-  integrity sha512-YFpuCu/ZVHBiK42bzEihZTA3tvEPQhaKE5tYej41AlNYXbwIWxO93fxYYrX7vs275s0yCKr6Zp6y7kI+mOklRQ==
+  version "2.23.13"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.23.13.tgz#2647b9b6b93e9a257efb6d14c1b9af7a0f938439"
+  integrity sha512-WU4XHs4E6szAyoREzTs5bUAc1WFadiz5jRjNlA7aIIqf+raT4jfA320P0XmlyZz/wJwmpZnOuki4kAFsmadkTQ==
   dependencies:
     "@types/draco3d" "^1.4.0"
     "@types/offscreencanvas" "^2019.6.4"
