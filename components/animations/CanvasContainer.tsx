@@ -85,7 +85,7 @@ export default function CanvasContainer() {
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
       <Cone position={[-1.7, -0.8, 0]} rotation-y={-100} scale={0.7} />
-      <Torus position={[-2.7, 1.5, 0]} rotation-y={-45} scale={0.8} />
+      <Torus position={[-2, 1.7, 0]} rotation-y={-45} scale={0.8} />
 
       <Cylinder position={[1.5, -0.5, 0]} rotation-y={50} scale={0.5} />
       <Sphere position={[0.7, 0.8, -1]} rotation-y={-25} scale={0.1} />
