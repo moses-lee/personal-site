@@ -47,6 +47,9 @@ export default function App() {
         <div ref={ref}>
           <BottomTabs setTab={setTab} currentTab={tab} />
         </div>
+        <div className="absolute text-grey text-[0.875rem] p-4 font-extralight top-0 right-0 mt-[2.175rem] italic">
+          --2023
+        </div>
       </div>
       <ContentContainer tab={tab} />
     </div>
