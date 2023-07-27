@@ -31,7 +31,7 @@ export const content: Content = {
         header: "hi, i'm moses.",
         paragraph: `Currently, I am a software engineer at Courtyard.io.
         In 2022, I graduated from University of Southern California, with a BS in Computer Science.
-        I specialize with fullstack development, speicifcally with anything that deals with TypeScript, Python, and Golang.
+        I specialize with fullstack development, specifically with anything that deals with TypeScript, Python, and Golang.
         
         Learning new things and building impactful products inspire me.`,
         image:
