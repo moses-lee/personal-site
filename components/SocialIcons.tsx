@@ -2,9 +2,12 @@ import { content } from "@/data/content";
 import Image from "next/image";
 import Link from "next/link";
 
-export function SocialIcons() {
+type Props = {
+  className?: string;
+}
+export function SocialIcons({ className }: Props) {
   return (
-    <div className="flex flex-cols gap-12 items-center justify-center">
+    <div className={`flex flex-cols gap-12 items-center justify-center ${className}`}>
       {Object.keys(content.socials).map((social) => (
         <Link
           key={social}

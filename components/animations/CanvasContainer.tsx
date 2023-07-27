@@ -84,13 +84,16 @@ export default function CanvasContainer() {
       <fog attach="fog" args={["white", 10, 40]} />
       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
       <pointLight position={[-10, -10, -10]} />
-      <Cone position={[-1.5, -0.5, 0]} rotation-y={-100} scale={0.5} />
-      <Torus position={[-1.8, 1.5, 0]} rotation-y={-45} scale={0.5} />
-      <Cylinder position={[1, 0, 0]} rotation-y={50} scale={0.3} />
-      <Sphere position={[0.7, 0.8, 0]} rotation-y={-25} scale={0.1} />
-      <Sphere position={[0.2, -0.7, 0]} rotation-y={-25} scale={0.1} />
-      <Sphere position={[-0.8, 0.2, 0]} rotation-y={-25} scale={0.1} />
-      <Icosahedron position={[0, 1, 0]} rotation-y={-25} scale={0.5} />
+      <Cone position={[-1.7, -0.8, 0]} rotation-y={-100} scale={0.7} />
+      <Torus position={[-2.7, 1.5, 0]} rotation-y={-45} scale={0.8} />
+
+      <Cylinder position={[1.5, -0.5, 0]} rotation-y={50} scale={0.5} />
+      <Sphere position={[0.7, 0.8, -1]} rotation-y={-25} scale={0.1} />
+      <Sphere position={[0.2, -0.7, -1]} rotation-y={-25} scale={0.1} />
+      <Sphere position={[-1, 0.2, -1]} rotation-y={-25} scale={0.1} />
+      <Icosahedron position={[0, 1.3, 0]} rotation-y={-25} scale={0.65} />
+      <Tetrahedron position={[1.5, 1.5, 0]} rotation-y={-25} scale={0.5} />
+      <Box position={[0, -1.5, 0]} rotation-y={-25} scale={0.5} />
     </Canvas>
   );
 }

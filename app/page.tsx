@@ -1,15 +1,32 @@
 "use client";
-import { TypewriterComponent } from "@/components/Typewriter";
+import { TextScroller } from "@/components/TextScroller";
 import { SocialIcons } from "@/components/SocialIcons";
 import { BottomTabs } from "@/components/BottomTabs";
-import { ContentContainer } from "@/components/ContentContainer";
-import { useState, useRef, useEffect } from "react";
+import { ContentContainer } from "@/components/content/ContentContainer";
+import { useState, useRef, useEffect, useMemo } from "react";
 import { content, TabTitle } from "@/data/content";
 import CanvasContainer from "@/components/animations/CanvasContainer";
 
 export default function App() {
   const [tab, setTab] = useState<TabTitle | null>(null);
   const ref = useRef<null | HTMLDivElement>(null);
+  const headerText: string = useMemo(() => {
+    const txt = Object.keys(content.tabs).map((tab) => {
+      return content.tabs[tab as TabTitle]
+        .map((cell, idx) => {
+          return (
+            (cell.header || "") +
+            (cell.header && cell.subheader ? " " : "") +
+            (cell.subheader || "") +
+            (cell.subheader && cell.paragraph ? " " : "") +
+            (cell.paragraph || "")
+          );
+        })
+        .join(" ");
+    });
+
+    return txt.join(" ");
+  }, []);
 
   useEffect(() => {
     if (tab && ref && ref.current) {
@@ -20,13 +37,15 @@ export default function App() {
   return (
     <div>
       <div className="h-screen">
-        <div className="flex flex-col justify-evenly h-[90%]">
-          <CanvasContainer />
-          <TypewriterComponent strings={content.intro} className="-mt-[20%]" />
+        <TextScroller text={headerText} />
+        <div className="flex flex-col justify-center h-[90%]">
+          <div className="h-[80%] w-full">
+            <CanvasContainer />
+          </div>
           <SocialIcons />
         </div>
         <div ref={ref}>
-          <BottomTabs setTab={setTab} />
+          <BottomTabs setTab={setTab} currentTab={tab} />
         </div>
       </div>
       <ContentContainer tab={tab} />

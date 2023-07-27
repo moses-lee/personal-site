@@ -14,8 +14,8 @@ module.exports = {
       },
       colors: {
         background: "#16161d",
-        "dark-white": "#fbfbfc",
-        "grey": "#5c5c61",
+        "grey": "#737377",
+        "light-grey": "#a2a2a5",
       },
     },
   },
