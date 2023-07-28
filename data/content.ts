@@ -50,7 +50,7 @@ export const content: Content = {
       },
       {
         header: "Genie",
-        subheader: "Co-Founder / Lead Mobile Developer | June 2020 - June 2022",
+        subheader: "Co-Founder + Lead Mobile Developer | June 2020 - June 2022",
         link: "https://geniewebsite.vercel.app/",
         paragraph: "Pre-Seed",
       },
