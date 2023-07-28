@@ -17,23 +17,18 @@ export type Socials = Record<
 >;
 
 export type Content = {
-  intro: string;
   tabs: Record<TabTitle, CellContent[]>;
   socials: Socials;
 };
 
 export const content: Content = {
-  intro:
-    "hello, my name is moses lee. i am a fullstack engineer. created in 2023.",
   tabs: {
     about: [
       {
-        header: "hi, i'm moses.",
-        paragraph: `Currently, I am a software engineer at Courtyard.io.
-        In 2022, I graduated from University of Southern California, with a BS in Computer Science.
-        I specialize with fullstack development, specifically with anything that deals with TypeScript, Python, and Golang.
-        
-        Learning new things and building impactful products inspire me.`,
+        header: "Hi, I'm moses.",
+        paragraph: `I am a self-taught developer who loves tackling important and difficult problems.
+        I graduated from University of Southern California with a B.S. in Computer Science, and I am currently a Software Engineer at Courtyard.io.
+        Although I specialize in fullstack development, I am always striving to learn new cutting edge technologies.`,
         image:
           "https://pbs.twimg.com/profile_images/1623458254436302849/3Dpd5W0T_400x400.jpg",
       },
@@ -67,21 +62,26 @@ export const content: Content = {
       {
         header: "Amazon",
         subheader:
-          "Software Development Engineer Intern (Alexa AI) | May 2021- Aug 2021",
+          "Software Development Engineer Intern (Alexa AI) | May 2021 - Aug 2021",
         link: "https://www.amazon.com",
       },
     ],
 
     skills: [
-      {
-        header: "Languages",
-        subheader: "TypeScript, Python, Golang, Java, C++, C, SQL, HTML/CSS",
-      },
-      {
-        header: "Frameworks and Tools",
-        subheader:
-          "React, Next.js, Cypress, Jest, Node.js, Fiber, Three.js, PostgreSQL, GraphQL, Android, iOS, Flask, MYSQL, AWS, Google Cloud, Docker",
-      },
+      // {
+      //   header: "Languages",
+      //   subheader: "TypeScript, Python, Golang, Java, C++, C, SQL, HTML/CSS",
+      // },
+      // {
+      //   header: "Frameworks and Tools",
+      //   subheader:
+      //     "React, Next.js, Fiber, Cypress, Jest, Node.js, Three.js, PostgreSQL, GraphQL, Android, iOS, Flask, MYSQL, AWS, Google Cloud, Docker",
+      // },
+      // {
+      //   header: "Interests",
+      //   subheader:
+      //     "artificial Intelligence, Quantum, entrepreneurship, philosophy, travel",
+      // },
     ],
   },
   socials: {

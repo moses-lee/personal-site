@@ -1,6 +1,5 @@
 import { content } from "@/data/content";
 import Image from "next/image";
-import Link from "next/link";
 
 type Props = {
   className?: string;
@@ -9,7 +8,7 @@ export function SocialIcons({ className }: Props) {
   return (
     <div className={`flex flex-cols gap-12 items-center justify-center ${className}`}>
       {Object.keys(content.socials).map((social) => (
-        <Link
+        <a
           key={social}
           href={content.socials[social].url}
           rel="noopener noreferrer"
@@ -22,7 +21,7 @@ export function SocialIcons({ className }: Props) {
             width={28}
             height={28}
           />
-        </Link>
+        </a>
       ))}
     </div>
   );

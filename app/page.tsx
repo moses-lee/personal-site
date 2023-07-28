@@ -13,13 +13,14 @@ export default function App() {
   const headerText: string = useMemo(() => {
     const txt = Object.keys(content.tabs).map((tab) => {
       return content.tabs[tab as TabTitle]
-        .map((cell, idx) => {
+        .map((cell) => {
           return (
             (cell.header || "") +
-            (cell.header && cell.subheader ? " " : "") +
+            (cell.header ? " " : "") +
             (cell.subheader || "") +
-            (cell.subheader && cell.paragraph ? " " : "") +
-            (cell.paragraph || "")
+            (cell.subheader ? " " : "") +
+            (cell.paragraph || "") +
+            (cell.paragraph ? " " : "")
           );
         })
         .join(" ");
@@ -47,9 +48,15 @@ export default function App() {
         <div ref={ref}>
           <BottomTabs setTab={setTab} currentTab={tab} />
         </div>
-        <div className="absolute text-grey text-[0.875rem] p-4 font-extralight top-0 right-0 mt-[2.175rem] italic">
-          --2023
-        </div>
+
+        <a
+          href="https://github.com/moses-lee/personal-site"
+          rel="noopener noreferrer"
+          target="_blank"
+          className="absolute text-grey text-[0.765rem] p-4 font-extralight top-0 right-0 mt-[2.175rem] italic"
+        >
+          --github
+        </a>
       </div>
       <ContentContainer tab={tab} />
     </div>

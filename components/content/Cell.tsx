@@ -20,9 +20,14 @@ export function Cell({ cellContent }: { cellContent: CellContent }) {
         {(cellContent.header || cellContent.subheader) && (
           <div>
             {cellContent.header && (
-              <div className={`font-medium text-[1.15rem] text-light-grey}`}>
-                <a href={cellContent.link}> {cellContent.header}</a>
-              </div>
+              <a
+                rel="noopener noreferrer"
+                className={`font-medium text-[1.15rem] text-light-grey}`}
+                target="_blank"
+                href={cellContent.link}
+              >
+                {cellContent.header}
+              </a>
             )}
             {cellContent.subheader && (
               <div className="text-light-grey text-[0.875rem] italic">
