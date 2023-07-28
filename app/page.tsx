@@ -48,14 +48,13 @@ export default function App() {
         <div ref={ref}>
           <BottomTabs setTab={setTab} currentTab={tab} />
         </div>
-
         <a
           href="https://github.com/moses-lee/personal-site"
           rel="noopener noreferrer"
           target="_blank"
           className="absolute text-grey text-[0.765rem] p-4 font-extralight top-0 right-0 mt-[2.175rem] italic"
         >
-          --github
+          {"//"} built with next.js, tailwindcss, and three
         </a>
       </div>
       <ContentContainer tab={tab} />
