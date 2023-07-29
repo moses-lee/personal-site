@@ -68,20 +68,20 @@ export const content: Content = {
     ],
 
     skills: [
-      // {
-      //   header: "Languages",
-      //   subheader: "TypeScript, Python, Golang, Java, C++, C, SQL, HTML/CSS",
-      // },
-      // {
-      //   header: "Frameworks and Tools",
-      //   subheader:
-      //     "React, Next.js, Fiber, Cypress, Jest, Node.js, Three.js, PostgreSQL, GraphQL, Android, iOS, Flask, MYSQL, AWS, Google Cloud, Docker",
-      // },
-      // {
-      //   header: "Interests",
-      //   subheader:
-      //     "artificial Intelligence, Quantum, entrepreneurship, philosophy, travel",
-      // },
+      {
+        header: "Languages",
+        subheader: "TypeScript, Python, Golang, Java, C++, C, SQL, HTML/CSS",
+      },
+      {
+        header: "Frameworks and Tools",
+        subheader:
+          "React, Next.js, Fiber, Cypress, Jest, Node.js, Three.js, PostgreSQL, GraphQL, Android, iOS, Flask, MYSQL, AWS, Google Cloud, Docker",
+      },
+      {
+        header: "Interests",
+        subheader:
+          "artificial Intelligence, Quantum, entrepreneurship, philosophy, travel",
+      },
     ],
   },
   socials: {
