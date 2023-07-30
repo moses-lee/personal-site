@@ -80,7 +80,7 @@ export const content: Content = {
       {
         header: "Interests",
         subheader:
-          "artificial Intelligence, Quantum, entrepreneurship, philosophy, travel",
+          "Artificial Intelligence, Quantum, entrepreneurship, philosophy, travel",
       },
     ],
   },
